@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double a, b, c,u,A;
+
+
+        System.out.println("Üçgen Alanı Bulucu'ya Hoşgeldiniz");
+        System.out.print("Üçgenin 1. kenarının uzunluğunu giriniz: ");
+        a = input.nextDouble();
+        System.out.print("Üçgenin 2. kenarının uzunluğunu giriniz: ");
+        b= input.nextDouble();
+        System.out.print("Üçgenin 3. kenarının uzunluğunu giriniz: ");
+        c = input.nextDouble();
+//Üç𝑔𝑒𝑛𝑖𝑛 ç𝑒𝑣𝑟𝑒𝑠𝑖 = 2𝑢
+//
+//𝑢 = (a+b+c) / 2
+//
+//Alan * Alan = 𝑢 * (𝑢 − 𝑎)* (𝑢 − 𝑏) * (𝑢 − 𝑐)
+
+        u = (a+b+c)/2;
+        A = Math.sqrt(u*(u-a)*(u-b)*(u-c));
+        System.out.println("Üçgenin alanı " + A);
+
+        System.out.print("Bizi tercih ettiğiniz için teşekkürler!");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
