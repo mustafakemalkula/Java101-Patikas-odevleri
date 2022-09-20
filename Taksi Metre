@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TaksiMetre {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        double a, km, result;
+        a = 10;
+        System.out.print("Kaç kilometre yol aldığınızı giriniz:  ");
+        km = input.nextDouble();
+        result = 2.20*km + a;
+        result = result<20 ? 20 : result;
+
+        System.out.println("Taksi ücretiniz : " + result);
+
+
+
+
+
+
+
+    }
+}
