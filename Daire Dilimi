@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Daire {
+    public static void main(String[] args) {
+        // Formül : (𝜋 * (r*r) * 𝛼) / 360
+
+        double r, alpha, A, pi=3.14;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Dairenin yarı çapını metre cinsinden giriniz: ");
+        r = input.nextDouble();
+        System.out.print("Daire diliminin merkez açısının ölçüsünü giriniz:  ");
+        alpha = input.nextDouble();
+        A = (pi*(r*r)*alpha) / 360;
+        System.out.println("Daire dilimin alanı: " + A +" metrekaredir.");
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}
