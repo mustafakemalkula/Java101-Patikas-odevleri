@@ -1,0 +1,28 @@
+import java.net.SocketTimeoutException;
+import java.util.Scanner;
+public class ManavKasaProgrami {
+    public static void main(String[] args) {
+        Scanner girdi = new Scanner(System.in);
+        double patlican =5.00, muz=0.95, domates=1.11, elma= 3.67, armut=2.14;
+        double pat, mu, domat, el, arm, tutar;
+        System.out.print("Kaç kilo patlıcan aldınız? ");
+        pat = girdi.nextDouble();
+        System.out.print("Kaç kilo muz aldınız? ");
+        mu = girdi.nextDouble();
+        System.out.print("Kaç kilo domates aldınız? ");
+        domat = girdi.nextDouble();
+        System.out.print("Kaç kilo elma aldınız? ");
+        el = girdi.nextDouble();
+        System.out.print("Kaç kilo armut aldınız? ");
+        arm = girdi.nextDouble();
+        tutar = (pat*patlican) + (muz*mu) + (elma*el) + (arm*armut) + (domates*domat);
+        System.out.println("Ödemeniz gereken tutar: " + tutar + " TL");
+
+
+
+
+
+
+
+    }
+}
