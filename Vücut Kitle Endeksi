@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class VucutKitleEndeksi {
+
+    public static void main(String[] args) {
+        // Kilo (kg) / Boy(m) * Boy(m)
+        double boy, kilo, sonuc;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen kilonuzu giriniz: ");
+        kilo = input.nextDouble();
+        System.out.print("Lütfen boyunuzu metre cinsinden giriniz: ");
+        boy = input.nextDouble();
+        sonuc = kilo / (boy*boy);
+        System.out.println("Vücüt Kitle Endeksiniz: " + sonuc);
+
+
+
+    }
+}
