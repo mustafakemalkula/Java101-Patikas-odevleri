@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class KullaniciGirisi {
+    public static void main(String[] args) {
+        String username, password, reset, newPassword, secondNewPassword;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Kullanıcı Adınızı Giriniz: ");
+        username = input.nextLine();
+        System.out.print("Şifrenizi Giriniz: ");
+        password = input.nextLine();
+
+        if (username.equals("patika") && password.equals("java123")) {
+            System.out.println("Giriş Yaptınız! ");
+        }else if (username.equals("patika") && !password.equals("java123")) {
+            System.out.print("Yanlış Şifre!\nŞifrenizi Sıfırlamak İster Misiniz?: ");
+            reset = input.nextLine();
+            if(reset.equals("evet")){
+                System.out.print("Yeni Şifrenizi Giriniz: ");
+                newPassword= input.nextLine();
+                if (newPassword.equals("java123")) {
+                    System.out.print("Yeni Şifreniz Eski Şifre İle Aynı Olamaz!\nLütfen Başka Bir Şifre Deneyiniz: ");
+                    secondNewPassword = input.nextLine();
+                    if (!secondNewPassword.equals("java123")) {
+                        System.out.println("Yeni Şifreniz Başarıyla Oluşturuldu!");
+                    }else {
+                        System.out.println("Yeni Şifreniz Eskisi ile Aynı Olamaz!\nÇok Kez Yapılan Hatalı İşlemden Dolayı Hesabınız Askıya Alınmıştır.");
+                    }
+                }else {
+                    System.out.println("Yeni Şifreniz Başarıyla Oluşturuldu");
+                }}else {
+                System.out.println("Tekrar Giriş Yapmayı Deneyiniz");
+            }} else {
+            System.out.println("Kullanıcı Adınızı Yanlış Girdiniz!\nLütfen Tekrar Deneyiniz!");
+        }
+
+
+    }
+
+            }
+
+
